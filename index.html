@@ -1,126 +1,207 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Datenschutzerklärung – Daheim</title>
 <style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0;
-    padding: 0;
-    background: #faf8f5;
-    color: #2a2a28;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-  }
-  main {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 32px 20px 64px;
-  }
-  h1 { font-size: 1.6rem; margin-bottom: 0.2em; }
-  h2 { font-size: 1.15rem; margin-top: 2em; color: #3d5c40; }
-  .stand { color: #6b6b66; font-size: 0.9rem; margin-bottom: 2em; }
-  ul { padding-left: 1.3em; }
-  a { color: #3d7a4a; }
-  .footer-note {
-    margin-top: 3em;
-    padding-top: 1.5em;
-    border-top: 1px solid #ddd8cf;
-    font-size: 0.85rem;
-    color: #6b6b66;
-    font-style: italic;
+  :root {
+    --bg: #faf8f5;
+    --text: #2b2926;
+    --muted: #6b6560;
+    --line: #e5ded5;
+    --accent: #8fbf97;
   }
   @media (prefers-color-scheme: dark) {
-    body { background: #1c1c1a; color: #e8e6e0; }
-    h2 { color: #8fbf97; }
-    .stand, .footer-note { color: #9a988f; }
-    .footer-note { border-top-color: #3a3a36; }
-    a { color: #8fbf97; }
+    :root { --bg:#1c1c1a; --text:#e8e4df; --muted:#9a938c; --line:#33322e; }
   }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1rem 5rem;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 .3rem; }
+  h2 { font-size: 1.2rem; margin: 2.4rem 0 .6rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .4rem; }
+  p, li { margin: .6rem 0; }
+  ul { padding-left: 1.2rem; }
+  .stand { color: var(--muted); font-size: .92rem; margin: 0 0 2rem; }
+  .adresse { line-height: 1.5; }
+  a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
 </style>
 </head>
 <body>
 <main>
-<h1>Datenschutzerklärung</h1>
-<p class="stand">Stand: 6. September 2026</p>
+
+<h1>Datenschutzerklärung – Daheim</h1>
+<p class="stand">Stand: 18. September 2026</p>
 
 <h2>1. Verantwortlicher</h2>
-<p>
+<p class="adresse">
 Leonard Simon<br>
 Am Brachberg 18<br>
 99428 Grammetal<br>
 Deutschland<br>
-E-Mail: app.daheim@gmail.com
+E-Mail: <a href="mailto:app.daheim@gmail.com">app.daheim@gmail.com</a>
 </p>
-<p>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) ist die oben genannte Person.</p>
+<p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist die oben genannte Person.</p>
 
-<h2>2. Übersicht: Was Daheim ist und welche Daten wir verarbeiten</h2>
-<p>Daheim ist eine App für Paare/Familien zur gemeinsamen Organisation eines Haushalts (Einkaufsliste, Aufgaben, Termine, Chat, Fotos, Benachrichtigungen). Damit das funktioniert, verarbeiten wir zwangsläufig personenbezogene Daten von dir und den Mitgliedern deines Haushalts. Diese Erklärung beschreibt, welche das sind, wofür wir sie nutzen und an wen sie weitergegeben werden.</p>
+<h2>2. Worum es geht</h2>
+<p>
+Daheim ist eine App für Paare, Familien und Wohngemeinschaften. Mehrere Personen
+teilen sich einen gemeinsamen Raum mit Einkaufsliste, Aufgaben, Terminen, Chat,
+Fotos und Benachrichtigungen. Damit das funktioniert, werden personenbezogene
+Daten der Nutzerinnen und Nutzer und der übrigen Mitglieder eines Raums
+verarbeitet.
+</p>
 
-<h2>3. Deine Rechte als betroffene Person</h2>
+<h2>3. Deine Rechte</h2>
 <p>Du hast jederzeit das Recht auf:</p>
 <ul>
-<li><strong>Auskunft</strong> (Art. 15 DSGVO) darüber, welche Daten wir über dich gespeichert haben</li>
-<li><strong>Berichtigung</strong> (Art. 16 DSGVO) unrichtiger Daten</li>
-<li><strong>Löschung</strong> (Art. 17 DSGVO) deiner Daten</li>
-<li><strong>Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
-<li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO) — du bekommst deine Daten in einem gängigen Format</li>
-<li><strong>Widerspruch</strong> (Art. 21 DSGVO) gegen die Verarbeitung</li>
-<li><strong>Beschwerde bei einer Aufsichtsbehörde</strong> (Art. 77 DSGVO) — zuständig ist die Datenschutzaufsichtsbehörde deines Bundeslandes</li>
+  <li>Auskunft über die zu dir gespeicherten Daten</li>
+  <li>Berichtigung unrichtiger Daten</li>
+  <li>Löschung</li>
+  <li>Einschränkung der Verarbeitung</li>
+  <li>Datenübertragbarkeit in einem gängigen Format</li>
+  <li>Widerspruch gegen die Verarbeitung</li>
+  <li>Beschwerde bei der für dich zuständigen Datenschutzaufsichtsbehörde</li>
 </ul>
-<p>Wende dich für alle diese Anliegen an die oben genannte E-Mail-Adresse.</p>
-<p><strong>Hinweis zum aktuellen Stand:</strong> Eine Löschung deines Kontos und deiner Daten ist derzeit nur manuell möglich — schreib uns eine E-Mail, wir löschen deine Daten dann von Hand. Eine Selbstbedienungs-Funktion zum Löschen des eigenen Kontos direkt in der App ist geplant, aber noch nicht umgesetzt.</p>
+<p>
+Für alle diese Anliegen genügt eine Nachricht an die oben genannte E-Mail-Adresse.
+</p>
+<p>
+<strong>Konto löschen:</strong> Du kannst dein Konto direkt in der App löschen –
+in den Einstellungen unter „Konto löschen“. Dabei werden dein Konto, dein Name,
+dein Profilbild und deine Zuordnung zu Räumen entfernt. Inhalte, die du in einem
+gemeinsamen Raum erstellt hast, verlieren dabei die Zuordnung zu dir.
+</p>
 
-<h2>4. Welche Daten wir verarbeiten, und wofür</h2>
+<h2>4. Welche Daten wir verarbeiten und wozu</h2>
 
-<h3>4.1 Anmeldung (E-Mail-Login)</h3>
-<p>Wenn du dich anmeldest, erhebt Daheim deine <strong>E-Mail-Adresse</strong>. Damit du dich anmelden kannst, verschicken wir dir einen Anmelde-Link und/oder einen 6-stelligen Code an diese Adresse. Rechtsgrundlage: Erfüllung des Nutzungsvertrags (Art. 6 Abs. 1 lit. b DSGVO).</p>
+<h3>4.1 Anmeldung</h3>
+<p>
+Bei der Anmeldung wird deine E-Mail-Adresse erhoben. An diese Adresse werden
+Anmeldelinks und sechsstellige Codes verschickt. Rechtsgrundlage: Erfüllung des
+Nutzungsvertrags (Art. 6 Abs. 1 lit. b DSGVO).
+</p>
 
-<h3>4.2 Profildaten</h3>
-<p>Name und optionales Profilbild, die du selbst in den Einstellungen hinterlegst. Diese sind für die anderen Mitglieder deines Haushalts sichtbar (z. B. um zu zeigen, wer eine Aufgabe erledigt hat). Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</p>
+<h3>4.2 Profil</h3>
+<p>
+Name und – freiwillig – ein Profilbild. Beides ist für die anderen Mitglieder
+deines Raums sichtbar. Rechtsgrundlage: Erfüllung des Nutzungsvertrags.
+</p>
 
-<h3>4.3 Haushaltsdaten</h3>
-<p>Alles, was du und die Mitglieder deines Haushalts in der App eintragen, wird zwischen den Mitgliedern desselben Haushalts geteilt:</p>
-<ul>
-<li>Einkaufslisten-Einträge</li>
-<li>Aufgaben (inkl. Fälligkeit, Wiederholung, Zuweisung an ein Mitglied)</li>
-<li>Termine</li>
-<li>Chatnachrichten (inkl. geteilter Bilder)</li>
-<li>Fotos ("Momente") inkl. Bildunterschrift, Kommentare und Emoji-Reaktionen</li>
-<li>Benachrichtigungen und ein Aktivitätsprotokoll ("Zuletzt bei euch")</li>
-</ul>
-<p>Diese Daten sind ausschließlich für die Mitglieder desselben Haushalts sichtbar, nicht für Mitglieder anderer Haushalte. Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</p>
+<h3>4.3 Inhalte im gemeinsamen Raum</h3>
+<p>
+Einkaufsartikel, Aufgaben, Termine, Essenspläne und Gerichte, Nachrichten, Fotos
+mit Bildunterschriften, Kommentare und Reaktionen. Diese Inhalte sind
+ausschließlich für die Mitglieder desselben Raums sichtbar. Rechtsgrundlage:
+Erfüllung des Nutzungsvertrags.
+</p>
 
 <h3>4.4 Technische Daten</h3>
 <ul>
-<li>Eine zufällig erzeugte <strong>Geräte-Kennung</strong>, lokal auf deinem Gerät gespeichert, zur eindeutigen Zuordnung deines Geräts zu deinem Profil</li>
-<li><strong>Server-Logs</strong> (z. B. IP-Adresse, Zeitpunkt der Anfrage) fallen technisch bedingt bei jeder Nutzung eines Internetdienstes an. Rechtsgrundlage: berechtigtes Interesse an der technischen Sicherheit und Stabilität des Dienstes (Art. 6 Abs. 1 lit. f DSGVO).</li>
+  <li>eine zufällig erzeugte Gerätekennung, die lokal auf dem Gerät gespeichert wird</li>
+  <li>ein Push-Token deines Geräts, sofern du Benachrichtigungen erlaubst</li>
+  <li>Server-Protokolle mit IP-Adresse und Zeitpunkt der Anfrage</li>
 </ul>
+<p>
+Rechtsgrundlage: berechtigtes Interesse an Sicherheit und Stabilität des Dienstes
+(Art. 6 Abs. 1 lit. f DSGVO).
+</p>
 
-<h2>5. An wen geben wir Daten weiter? (Auftragsverarbeiter)</h2>
-<p>Wir setzen folgende externe Dienstleister ein, die in unserem Auftrag Daten verarbeiten (Auftragsverarbeitung nach Art. 28 DSGVO):</p>
-<p><strong>Supabase Inc.</strong> — Datenbank, Anmeldung (Authentifizierung) und Dateispeicher (Fotos, Profilbilder). Die Server, auf denen deine Daten liegen, stehen in der <strong>EU (Irland)</strong>. Das Unternehmen selbst hat seinen Sitz außerhalb der EU; für die Datenübermittlung gelten die von der EU-Kommission genehmigten Standardvertragsklauseln.</p>
-<p><strong>Brevo (Sendinblue SAS)</strong> — Versand der Anmelde-E-Mails (Code). Dieser Dienstleister hat seinen Sitz in Frankreich (EU); die Server für die Verarbeitung stehen in Frankreich und Deutschland. Eine Übermittlung in Länder außerhalb der EU findet dabei nicht statt.</p>
-<p><strong>Expo (650 Industries, Inc.)</strong> — technischer Versand von Push-Benachrichtigungen (z. B. bei neuen Nachrichten oder Einträgen in eurem Haushalt). Dafür wird ein technisches Push-Token deines Geräts verarbeitet, keine Inhalte, die über die Benachrichtigung selbst hinausgehen.</p>
-<p><strong>Apple Inc.</strong> — Abwicklung von Abo-Käufen über Apples eigenes In-App-Kauf-System. Zahlungsdaten (z. B. Kreditkarte) laufen ausschließlich über Apple und erreichen uns nie. Wir erhalten von Apple lediglich eine signierte Bestätigung, welches Abo gekauft wurde und bis wann es gültig ist.</p>
-<p>Mit den genannten Anbietern besteht bzw. wird, soweit erforderlich, ein Auftragsverarbeitungsvertrag abgeschlossen.</p>
-<p>Wir verkaufen keine Daten an Dritte und nutzen deine Daten nicht für Werbezwecke.</p>
+<h3>4.5 Abo und Kaufprüfung</h3>
+<p>
+Der Kauf des Abos läuft vollständig über Apple. Zahlungsdaten erreichen uns nicht.
+Apple stellt einen signierten Kaufbeleg aus. Dieser Beleg wird an einen von uns
+betriebenen Prüfdienst (gehostet bei Vercel) übermittelt, der ausschließlich prüft,
+ob der Beleg echt und gültig ist. Gespeichert werden danach nur der Status des
+Abos, das Produkt, das Ablaufdatum und die Kennung der Transaktion – verknüpft mit
+dem Raum, nicht mit deiner Person. Rechtsgrundlage: Erfüllung des Vertrags.
+</p>
+
+<h3>4.6 Rezepte aus dem Internet übernehmen</h3>
+<p>
+Wenn du im Essensplan den Link einer Rezeptseite einfügst, wird dieser Link an
+unseren Server übermittelt. Der Server ruft die angegebene Seite ab und liest
+daraus den Namen des Gerichts und die Zutatenliste aus. Der Zubereitungstext wird
+nicht übernommen und nicht gespeichert; stattdessen wird der Link zur Quelle
+hinterlegt. Der Betreiber der aufgerufenen Rezeptseite erhält dabei die
+Server-Anfrage, nicht deine IP-Adresse. Rechtsgrundlage: Erfüllung des Vertrags.
+</p>
+
+<h3>4.7 Angebote suchen</h3>
+<p>
+Über die Angebotssuche öffnet die App eine Suchseite eines externen Anbieters in
+einem eingebetteten Browserfenster. Es werden dabei nur der von dir gewählte
+Artikelname als Suchbegriff übergeben und keine weiteren Daten aus der App. Für
+die Verarbeitung auf der geöffneten Seite gilt die Datenschutzerklärung des
+jeweiligen Anbieters.
+</p>
+
+<h2>5. Empfänger (Auftragsverarbeiter)</h2>
+<ul>
+  <li>
+    <strong>Supabase Inc.</strong> – Datenbank, Anmeldung und Dateispeicher.
+    Server in der EU (Irland). Für Übermittlungen in Drittländer gelten
+    Standardvertragsklauseln.
+  </li>
+  <li>
+    <strong>Vercel Inc.</strong> – Betrieb des Prüfdienstes für Apple-Kaufbelege.
+    Verarbeitet wird ausschließlich der signierte Kaufbeleg. Für Übermittlungen in
+    Drittländer gelten Standardvertragsklauseln.
+  </li>
+  <li>
+    <strong>Brevo (Sendinblue SAS)</strong> – Versand der Anmelde-E-Mails.
+    Server in Frankreich und Deutschland, keine Übermittlung in Drittländer.
+  </li>
+  <li>
+    <strong>Expo (650 Industries, Inc.)</strong> – Zustellung von
+    Push-Benachrichtigungen. Übertragen wird das Push-Token und der Text der
+    Benachrichtigung.
+  </li>
+  <li>
+    <strong>Apple Inc.</strong> – Abwicklung der Abos und Käufe im App Store.
+  </li>
+</ul>
+<p>Daten werden nicht verkauft und nicht für Werbung verwendet.</p>
 
 <h2>6. Speicherdauer</h2>
-<p>Wir speichern deine Daten, solange du oder dein Haushalt die App aktiv nutzt. Löschst du einen Haushalt oder dein Konto (aktuell per E-Mail-Anfrage, siehe Abschnitt 3), werden die zugehörigen Daten gelöscht, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+<p>
+Daten werden gespeichert, solange dein Konto besteht. Löschst du dein Konto oder
+wird ein Raum gelöscht, werden die zugehörigen Daten entfernt – vorbehaltlich
+gesetzlicher Aufbewahrungspflichten.
+</p>
 
-<h2>7. Datensicherheit</h2>
-<p>Die Verbindung zwischen der App und unseren Servern ist durchgängig verschlüsselt (TLS/HTTPS). Der Zugriff auf die Daten eines Haushalts ist technisch auf angemeldete Mitglieder dieses Haushalts beschränkt.</p>
+<h2>7. Sicherheit</h2>
+<p>
+Die Verbindung zwischen App und Server ist durchgehend mit TLS/HTTPS
+verschlüsselt. Der Zugriff auf die Daten eines Raums ist technisch auf dessen
+angemeldete Mitglieder beschränkt; diese Beschränkung wird in der Datenbank selbst
+durchgesetzt, nicht erst in der App.
+</p>
 
 <h2>8. Kinder und Jugendliche</h2>
-<p>Daheim richtet sich an Erwachsene, die einen gemeinsamen Haushalt organisieren. Es ist möglich, dass Mitglieder eines Haushalts (z. B. Kinder einer Familie) indirekt genannt werden (etwa in einer Aufgabe oder einem Kalendereintrag) oder selbst als Mitglied hinzugefügt werden. Für die datenschutzkonforme Einbindung minderjähriger Personen ist der jeweilige Haushalt (die erwachsenen Nutzer) verantwortlich.</p>
+<p>
+Daheim richtet sich an Erwachsene, die einen gemeinsamen Haushalt organisieren.
+Minderjährige können in Inhalten erwähnt oder als Mitglieder hinzugefügt werden.
+Die Verantwortung dafür liegt bei den erwachsenen Mitgliedern des Raums.
+</p>
 
-<h2>9. Änderungen dieser Datenschutzerklärung</h2>
-<p>Wir passen diese Erklärung an, wenn sich die App oder die Rechtslage ändert. Die aktuelle Fassung findest du jeweils in der App unter Einstellungen sowie auf dieser Seite.</p>
+<h2>9. Änderungen dieser Erklärung</h2>
+<p>
+Diese Erklärung wird angepasst, wenn sich die App oder die rechtlichen
+Anforderungen ändern. Die jeweils aktuelle Fassung ist in der App und auf dieser
+Seite abrufbar.
+</p>
 
-<p class="footer-note">Dieses Dokument ist ein sorgfältig erstellter Entwurf, aber keine Rechtsberatung. Vor einer echten Veröffentlichung sollte es von einer rechtskundigen Person geprüft werden.</p>
+<footer>Daheim Familienraum · Leonard Simon · Grammetal</footer>
+
 </main>
 </body>
 </html>
