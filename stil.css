@@ -1,0 +1,63 @@
+:root {
+  color-scheme: light dark;
+  --hintergrund: #faf8f5;
+  --flaeche: #f1ede6;
+  --text: #292c28;
+  --text-leise: #62655f;
+  --akzent: #3d6b47;
+  --linie: #ddd8cf;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --hintergrund: #1c1c1a;
+    --flaeche: #262623;
+    --text: #e8e6e0;
+    --text-leise: #a3a198;
+    --akzent: #8fbf97;
+    --linie: #3a3a36;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--hintergrund);
+  color: var(--text);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+a { color: var(--akzent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--akzent); outline-offset: 2px; border-radius: 2px; }
+
+.kopf { border-bottom: 1px solid var(--linie); }
+.kopf-innen, main, .fuss-innen { max-width: 760px; margin: 0 auto; padding-left: 20px; padding-right: 20px; }
+.kopf-innen { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding-top: 14px; padding-bottom: 14px; }
+.marke { font-weight: 700; font-size: 19px; color: var(--text); text-decoration: none; }
+.kopf nav { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 15px; }
+.kopf nav a { text-decoration: none; }
+.kopf nav a[aria-current="page"] { color: var(--text); font-weight: 600; }
+
+main { padding-top: 32px; padding-bottom: 56px; }
+h1 { font-size: 30px; line-height: 1.25; margin: 0 0 6px; }
+h2 { font-size: 20px; line-height: 1.35; margin: 36px 0 8px; scroll-margin-top: 16px; }
+.stand { color: var(--text-leise); font-size: 15px; margin-top: 0; }
+p, li { overflow-wrap: anywhere; }
+.rechtstext p { white-space: pre-line; }
+ul, ol { padding-left: 1.3em; }
+
+.kasten { background: var(--flaeche); border-radius: 10px; padding: 4px 20px; margin: 24px 0; }
+.inhalt { background: var(--flaeche); border-radius: 10px; padding: 12px 20px; margin: 24px 0; font-size: 15px; }
+.inhalt ol { margin: 6px 0; columns: 2 16em; column-gap: 24px; }
+
+.fuss { border-top: 1px solid var(--linie); color: var(--text-leise); font-size: 14px; }
+.fuss-innen { padding-top: 20px; padding-bottom: 32px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  h1 { font-size: 26px; }
+  main { padding-top: 24px; }
+}
+@media print {
+  .kopf, .fuss, .inhalt { display: none; }
+  body { background: #fff; color: #000; }
+}
